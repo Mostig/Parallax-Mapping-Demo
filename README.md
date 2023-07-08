@@ -1,6 +1,10 @@
 # Parallax-Mapping-Demo
 It's my CG homework, a demo of Parallax Mapping developed with Qt+openGL.
 
+<img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20230708152248166.png" alt="image-20230708152248166" style="zoom:50%;" />
+
+<img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20230708153731860.png" alt="image-20230708153731860" style="zoom: 50%;" />
+
 ### 环境
 
 #### 硬件环境

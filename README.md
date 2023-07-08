@@ -1,15 +1,15 @@
 # Parallax-Mapping-Demo
 It's my CG homework, a demo of Parallax Mapping developed with Qt+openGL.
 
-<img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20220501162151810.png" alt="image-20220501162151810" style="zoom: 40%;" />
+<img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20220501162151810.png" alt="image-20220501162151810" style="zoom: 25%;" />
 
 Comparison of  (1)diffuse map, (2)diffuse map + normal map and (3)diffuse map + normal map + height map:
 
-<img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20230708152248166.png" alt="image-20230708152248166" style="zoom:50%;" />
+<img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20230708152248166.png" alt="image-20230708152248166" style="zoom: 30%;" />
 
 Comparison of (1)Parallax Mapping, (2)Steep Parallax Mapping and (3)Parallax Occlusion Mapping: 
 
-<img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20230708153731860.png" alt="image-20230708153731860" style="zoom: 50%;" />
+<img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20230708153731860.png" alt="image-20230708153731860" style="zoom: 33%;" />
 
 
 

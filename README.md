@@ -1,9 +1,17 @@
 # Parallax-Mapping-Demo
 It's my CG homework, a demo of Parallax Mapping developed with Qt+openGL.
 
+<img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20220501162151810.png" alt="image-20220501162151810" style="zoom: 40%;" />
+
+Comparison of  (1)diffuse map, (2)diffuse map + normal map and (3)diffuse map + normal map + height map:
+
 <img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20230708152248166.png" alt="image-20230708152248166" style="zoom:50%;" />
 
+Comparison of (1)Parallax Mapping, (2)Steep Parallax Mapping and (3)Parallax Occlusion Mapping: 
+
 <img src="https://gitee.com/mostig/csdn-image/raw/master/data/image-20230708153731860.png" alt="image-20230708153731860" style="zoom: 50%;" />
+
+
 
 ### 环境
 
@@ -29,7 +37,7 @@ stb_image ：图像解码库
 
   - 视差贴图(Parallax Mapping)
 
-  - 陡峭视差映射(Steep Parallax Mapping)\
+  - 陡峭视差映射(Steep Parallax Mapping)
 
   - 视差遮蔽映射(Parallax Occlusion Mapping)
 

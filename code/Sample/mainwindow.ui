@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>928</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OpenGL Demo</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: rgb(68, 68, 68);
+	color: rgb(255, 255, 255);
+	font: 9pt &quot;Microsoft YaHei UI&quot;;
+}
+QMenuBar{
+	background-color: rgb(200, 200, 200);
+	color: rgb(60, 60, 60);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <widget class="AXBOpenGLWidget" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>681</width>
+      <height>501</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bumpMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>40</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>凹凸映射 Demo</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="normalMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>150</y>
+      <width>151</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Normal Mapping</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="parallaxMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>190</y>
+      <width>151</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Parallax Mapping</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="rotateSlider">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>110</y>
+      <width>211</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>360</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>80</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rotate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showAngleLabel">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>80</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="deepParallaxMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>230</y>
+      <width>191</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Deep Parallax Mapping</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="parallaxOcclusionMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>270</y>
+      <width>221</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Parallax Occlusion Mapping</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>928</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menuImport">
+     <property name="title">
+      <string>Import</string>
+     </property>
+     <addaction name="actionMesh"/>
+     <addaction name="actionPointCloud"/>
+     <addaction name="actionVolumeModel"/>
+     <addaction name="actionNURBS"/>
+    </widget>
+    <addaction name="menuImport"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>设置</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>查看</string>
+    </property>
+    <widget class="QMenu" name="menuLightingModel">
+     <property name="title">
+      <string>Lighting Model</string>
+     </property>
+     <addaction name="actionPhong"/>
+     <addaction name="actionBlinn_Phong"/>
+    </widget>
+    <addaction name="actionPolygonMode"/>
+    <addaction name="menuLightingModel"/>
+    <addaction name="actionShowTexture"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMesh">
+   <property name="text">
+    <string>Mesh(.obj)</string>
+   </property>
+  </action>
+  <action name="actionPointCloud">
+   <property name="text">
+    <string>PointCloud</string>
+   </property>
+  </action>
+  <action name="actionVolumeModel">
+   <property name="text">
+    <string>VolumeModel</string>
+   </property>
+  </action>
+  <action name="actionNURBS">
+   <property name="text">
+    <string>NURBS</string>
+   </property>
+  </action>
+  <action name="actionPolygonMode">
+   <property name="text">
+    <string>PolygonMode</string>
+   </property>
+  </action>
+  <action name="actionShowTexture">
+   <property name="text">
+    <string>ShowTexture</string>
+   </property>
+  </action>
+  <action name="actionPhong">
+   <property name="text">
+    <string>Phong</string>
+   </property>
+  </action>
+  <action name="actionBlinn_Phong">
+   <property name="text">
+    <string>Blinn-Phong</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AXBOpenGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">axbopenglwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

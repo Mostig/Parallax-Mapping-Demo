@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>shader.frag</file>
+        <file>shader.vert</file>
+        <file>phong.vert</file>
+        <file>phong.frag</file>
+        <file>lightCubeShader.vert</file>
+        <file>lightCubeShader.frag</file>
+        <file>parallax_mapping.vert</file>
+        <file>parallax_mapping.frag</file>
+        <file>normal_mapping.vert</file>
+        <file>normal_mapping.frag</file>
+    </qresource>
+</RCC>
